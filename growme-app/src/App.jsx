@@ -98,9 +98,9 @@ function App() {
                     href={app.appUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`app-card-link ${app.appUrl.includes('drive.google.com') || app.appUrl.includes('youtube.com') || app.appUrl.startsWith('https://komodedecks') ? 'app-card-link-video' : 'app-card-link-app'}`}
+                    className={`app-card-link ${app.appUrl.includes('drive.google.com') || app.appUrl.includes('youtube.com') || app.appUrl.startsWith('https://komododecks.com/') ? 'app-card-link-video' : 'app-card-link-app'}`}
                   >
-                    {app.appUrl.includes('drive.google.com') || app.appUrl.includes('youtube.com') || app.appUrl.startsWith('https://komodedecks') ? (
+                    {app.appUrl.includes('drive.google.com') || app.appUrl.includes('youtube.com') || app.appUrl.startsWith('https://komododecks.com/') ? (
                       <>
                         <FaPlay style={{ marginRight: '8px', fontSize: '0.8rem' }} />
                         시연영상 보기
