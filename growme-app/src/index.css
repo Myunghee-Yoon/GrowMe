@@ -1,0 +1,88 @@
+:root {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #657166;
+  background-color: #DAEBE3;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 파스텔 커러 테마 */
+  --primary-color: #99CDD8;
+  --secondary-color: #F3C3B2;
+  --text-color: #657166;
+  --light-bg: #DAEBE3;
+  --card-bg: #ffffff;
+  --accent-color-1: #FDE8D3;
+  --accent-color-2: #CFD6C2;
+  --accent-color-3: #F3C3B2;
+  --dark-accent: #657166;
+  --header-font: 'Dancing Script', cursive;
+  --body-font: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--light-bg);
+}
+
+h1, h2, h3 {
+  font-family: var(--header-font);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.2em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .app-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
